@@ -376,7 +376,10 @@ export interface ApiProductProduct extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     image: Attribute.Media;
-    description: Attribute.String;
+    description: Attribute.Text &
+      Attribute.SetMinMaxLength<{
+        maxLength: 1000000;
+      }>;
     price: Attribute.Decimal;
     userNmae: Attribute.String;
     userLogo: Attribute.String;
@@ -404,6 +407,7 @@ export interface ApiUserListUserList extends Schema.CollectionType {
     singularName: 'user-list';
     pluralName: 'user-lists';
     displayName: 'userList';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -412,6 +416,7 @@ export interface ApiUserListUserList extends Schema.CollectionType {
     name: Attribute.String;
     logo: Attribute.Media;
     token: Attribute.String;
+    email: Attribute.Email;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

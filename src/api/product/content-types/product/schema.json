@@ -27,7 +27,8 @@
       ]
     },
     "description": {
-      "type": "string"
+      "type": "text",
+      "maxLength": 1000000
     },
     "price": {
       "type": "decimal"

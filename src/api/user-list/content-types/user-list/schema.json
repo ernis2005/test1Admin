@@ -4,7 +4,8 @@
   "info": {
     "singularName": "user-list",
     "pluralName": "user-lists",
-    "displayName": "userList"
+    "displayName": "userList",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,21 @@
       "type": "string"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "token": {
       "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
