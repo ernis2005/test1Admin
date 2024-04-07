@@ -38,6 +38,9 @@
     },
     "userLogo": {
       "type": "string"
+    },
+    "userToken": {
+      "type": "string"
     }
   }
 }
