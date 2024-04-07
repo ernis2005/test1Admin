@@ -417,6 +417,7 @@ export interface ApiUserListUserList extends Schema.CollectionType {
     logo: Attribute.Media;
     token: Attribute.String;
     email: Attribute.Email;
+    password: Attribute.Password;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
