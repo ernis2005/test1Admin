@@ -34,6 +34,9 @@
     },
     "password": {
       "type": "password"
+    },
+    "isPublish": {
+      "type": "boolean"
     }
   }
 }

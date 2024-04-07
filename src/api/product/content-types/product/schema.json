@@ -41,6 +41,9 @@
     },
     "userToken": {
       "type": "string"
+    },
+    "isPublish": {
+      "type": "boolean"
     }
   }
 }
